@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Injection Scanner</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="l_title">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>381</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>INJECTION SCANNER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_sql">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>280</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oswald</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(200, 200, 200);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>SQL Injection</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_xss">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>280</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oswald</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(200, 200, 200);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>XSS Injection</string>
+    </property>
+    <property name="icon">
+     <iconset theme="SP_MediaPlay">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l_bg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>531</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="i_injection">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>200</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="placeholderText">
+     <string>Ingresa la URL del sitio</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="bb_reports">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Ver reportes</string>
+    </property>
+    <property name="icon">
+     <iconset theme="s">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="w_reports" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>431</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(223, 223, 223);
+background-image: url();</string>
+    </property>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>401</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(223, 223, 223);
+background-image: url();</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>399</width>
+        <height>249</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="ly_files">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>351</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Selecciona el reporte y presiona abrir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b_open_file">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(200, 200, 200);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Abrir</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="bb_close">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>91</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cerrar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b_open_file_cmd">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(200, 200, 200);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Abrir con CMD</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCommandLinkButton" name="bb_install">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Instalar recursos</string>
+    </property>
+    <property name="icon">
+     <iconset theme="s">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="bb_help">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>0</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+selection-background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Ayuda</string>
+    </property>
+    <property name="icon">
+     <iconset theme="s">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="i_name">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>230</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+background-image: url();
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nombre del reporte</string>
+    </property>
+   </widget>
+   <zorder>l_bg</zorder>
+   <zorder>l_title</zorder>
+   <zorder>b_sql</zorder>
+   <zorder>b_xss</zorder>
+   <zorder>i_injection</zorder>
+   <zorder>bb_reports</zorder>
+   <zorder>bb_install</zorder>
+   <zorder>bb_help</zorder>
+   <zorder>i_name</zorder>
+   <zorder>w_reports</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>476</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
